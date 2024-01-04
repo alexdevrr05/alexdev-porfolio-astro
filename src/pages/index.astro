@@ -1,14 +1,43 @@
 ---
+import MainSectionContainer from '../components/MainSectionContainer.astro';
 import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
 ---
 
-<Layout title='Portafolio | Alex'>
+<Layout
+  title='Portfolio de Alexdev - Desarrollador Web con más de 2 años de experiencia'
+  description='Disponible para trabajar. Desarrollador frontend. Ingeniero en Sistemas Computacionales'
+>
   <main>
-    <h1
-      class='text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10'
-    >
-      Epa! Soy Alex
-    </h1>
+    <MainSectionContainer class='py-44 pb-32'>
+      <h1
+        class='text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10'
+      >
+        Epa! Soy Alex<a
+          href='https://linkedin.com/in/alexdevrr'
+          target='_blank'
+          rel='noopener'
+          class='flex justify-center items-center'
+        >
+          <Badge>Disponible para trabajar</Badge>
+        </a>
+      </h1>
+      <h2
+        class='text-xl lg:text-2xl text-balance max-w-[700px] text-black dark:text-white'
+      >
+        <span>+2 años de experiencia.</span><span
+          class='text-yellow-800 dark:text-yellow-200'
+        >
+          Desarrollador de Software</span
+        >.
+        <span class='text-red-800 dark:text-red-200'>
+          De Puerto Vallarta, México</span
+        >.
+        <span class='text-sky-800 dark:text-sky-200'
+          >Especializado en el desarrollo frontend.</span
+        >
+      </h2>
+    </MainSectionContainer>
   </main>
 </Layout>
 
