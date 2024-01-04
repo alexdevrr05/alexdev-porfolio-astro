@@ -2,21 +2,25 @@
 <nav
   class='flex justify-between mx-auto w-full xl:w-[768px] py-5 z-10 backdrop-blur-2xl'
 >
-  <div class='flex text-black dark:text-white w-full mx-5'>
+  <div class='flex flex-col sm:flex-row text-black dark:text-white w-full mx-5'>
     <a class='font-semibold' href='#'>Alejandro Ramírez</a>
-    <div class='flex gap-4 flex-1 justify-evenly'>
+    <div
+      class='flex flex-col sm:flex-row gap-4 items-center flex-1 justify-evenly'
+    >
       <a href='#'>Experiencia</a>
       <a href='#'>Proyectos</a>
       <a href='#'>Sobre mí</a>
       <a href='#'>Contacto</a>
     </div>
 
-    <button
-      type='button'
-      class='min-w-10 bg-red-100 rounded-md'
-      aria-label='Toggle theme'
-    >
-      <span>icon</span>
-    </button>
+    <div>
+      <button
+        type='button'
+        class='min-w-10 bg-red-100 rounded-md'
+        aria-label='Toggle theme'
+      >
+        <span>icon</span>
+      </button>
+    </div>
   </div>
 </nav>

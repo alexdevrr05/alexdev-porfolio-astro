@@ -4,7 +4,8 @@ import Layout from '../layouts/Layout.astro';
 import {
   Badge,
   SocialBanner,
-  MainSectionContainer,
+  SectionContainer,
+  Experience,
 } from '../components/index.astro';
 
 // Icons:
@@ -12,6 +13,7 @@ import {
   GitHubIcon,
   MailIcon,
   LinkedInIcon,
+  Briefcase,
 } from '../components/icons/index.astro';
 ---
 
@@ -19,8 +21,8 @@ import {
   title='Portfolio de Alexdev - Desarrollador Web con más de 2 años de experiencia'
   description='Disponible para trabajar. Desarrollador frontend. Ingeniero en Sistemas Computacionales'
 >
-  <main>
-    <MainSectionContainer class='py-44 pb-32'>
+  <main class='mx-5 xl:mx-0'>
+    <SectionContainer class='py-44 pb-32' id='presentación'>
       <img
         class='rounded-full size-12 mb-4'
         src='/ar-icon.svg'
@@ -68,7 +70,16 @@ import {
           alexkey@gmail.com
         </SocialBanner>
       </nav>
-    </MainSectionContainer>
+    </SectionContainer>
+    <SectionContainer id='experiencia'>
+      <h2
+        class='text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80'
+      >
+        <Briefcase class='size-7' />
+        Experiencia laboral
+      </h2>
+      <Experience />
+    </SectionContainer>
   </main>
 </Layout>
 

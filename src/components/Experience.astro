@@ -1,0 +1,28 @@
+---
+import ExperienceItem from './ExperienceItem.astro';
+const EXPERIENCIE = [
+  {
+    date: 'Octubre 2021 - Noviembre 2023',
+    title: 'Desarrollador Frontend en Alice',
+    description:
+      'Durante mi tiempo en Alice, desarrollé la interfaz de usuario de la aplicación web de esta startup de tecnología financiera. Trabajé en estrecha colaboración con el equipo de diseño para crear una interfaz de usuario intuitiva y fácil de usar, y con el equipo de backend para la integración de los servicios REST API.',
+    link: 'https://twitch.tv/midudev',
+  },
+  {
+    date: 'Febrero 2021 - Enero 2022',
+    title: 'Desarrollador Frontend en Redwood EDA',
+    description:
+      'Responsable de la creación de componentes con React.js y desarrollo de la interfaz de usuario de esta aplicación web de código abierto para el diseño de circuitos integrados. Trabajé en estrecha colaboración con el equipo de diseño para crear una interfaz de usuario intuitiva y fácil de usar, y con el equipo de backend para integrar la API.',
+  },
+];
+---
+
+<ol class='relative border-s border-gray-200 ml-3'>
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class='mb-10 ms-4'>
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
