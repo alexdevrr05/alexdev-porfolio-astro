@@ -1,10 +1,22 @@
+<!-- bg-neutral-200 --><!-- dark:bg-black/50 -->
 <nav
-  class='flex justify-between bg-indigo-400 mx-auto w-full xl:w-[768px] py-5 z-10'
+  class='flex justify-between mx-auto w-full xl:w-[768px] py-5 z-10 backdrop-blur-2xl'
 >
-  <div class='text-white'>
-    <a href='#'>Alejandro Ramírez</a>
-    <a href='#'>Experiencia</a>
-    <a href='#'>Sobre mí</a>
-    <a href='#'>Contacto</a>
+  <div class='flex text-white w-full mx-5'>
+    <a class='font-semibold' href='#'>Alejandro Ramírez</a>
+    <div class='flex gap-4 flex-1 justify-evenly'>
+      <a href='#'>Experiencia</a>
+      <a href='#'>Proyectos</a>
+      <a href='#'>Sobre mí</a>
+      <a href='#'>Contacto</a>
+    </div>
+
+    <button
+      type='button'
+      class='min-w-10 bg-red-100 rounded-md'
+      aria-label='Toggle theme'
+    >
+      <span>icon</span>
+    </button>
   </div>
 </nav>
