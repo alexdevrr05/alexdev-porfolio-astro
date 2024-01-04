@@ -1,7 +1,18 @@
 ---
-import MainSectionContainer from '../components/MainSectionContainer.astro';
 import Layout from '../layouts/Layout.astro';
-import Badge from '../components/Badge.astro';
+
+import {
+  Badge,
+  SocialBanner,
+  MainSectionContainer,
+} from '../components/index.astro';
+
+// Icons:
+import {
+  GitHubIcon,
+  MailIcon,
+  LinkedInIcon,
+} from '../components/icons/index.astro';
 ---
 
 <Layout
@@ -10,6 +21,11 @@ import Badge from '../components/Badge.astro';
 >
   <main>
     <MainSectionContainer class='py-44 pb-32'>
+      <img
+        class='rounded-full size-12 mb-4'
+        src='/ar-icon.svg'
+        alt='ar icon '
+      />
       <h1
         class='text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10'
       >
@@ -22,6 +38,7 @@ import Badge from '../components/Badge.astro';
           <Badge>Disponible para trabajar</Badge>
         </a>
       </h1>
+      <!-- TODO: Adaptar los colores -->
       <h2
         class='text-xl lg:text-2xl text-balance max-w-[700px] text-black dark:text-white'
       >
@@ -37,6 +54,20 @@ import Badge from '../components/Badge.astro';
           >Especializado en el desarrollo frontend.</span
         >
       </h2>
+      <nav class='flex gap-4 mt-8 flex-wrap'>
+        <SocialBanner href='https://linkedin.com/in/alexdevrr'>
+          <LinkedInIcon class='size-4 md:size-6' />
+          LinkedIn
+        </SocialBanner>
+        <SocialBanner href='https://github.com/alexdevrr05'>
+          <GitHubIcon class='size-4 md:size-6' />
+          GitHub
+        </SocialBanner>
+        <SocialBanner href='mailto:alexkey0516@gmail.com'>
+          <MailIcon class='size-4 md:size-6' />
+          alexkey@gmail.com
+        </SocialBanner>
+      </nav>
     </MainSectionContainer>
   </main>
 </Layout>
