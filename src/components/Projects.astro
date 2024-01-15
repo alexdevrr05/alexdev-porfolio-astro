@@ -1,6 +1,8 @@
 ---
 import ReactNative from './icons/ReactNative.astro';
 import CSS from './icons/CSS.astro';
+import Vue from './icons/Vue.astro';
+import Node from './icons/Node.astro';
 
 const TAGS = {
   REACTNATIVE: {
@@ -10,8 +12,18 @@ const TAGS = {
   },
   CSS: {
     name: 'CSS',
-    class: 'bg-[#2c66b4] text-white',
+    class: 'bg-[#3652dd] text-white',
     icon: CSS,
+  },
+  VUE: {
+    name: 'Vue',
+    class: 'bg-[#1a1a1a] text-white',
+    icon: Vue,
+  },
+  NODE: {
+    name: 'Node.js',
+    class: 'bg-black text-white',
+    icon: Node,
   },
 };
 const PROJECTS = [
@@ -23,6 +35,15 @@ const PROJECTS = [
     github: 'https://github.com/pheralb/svgl',
     image: '/projects/pediditos.webp',
     tags: [TAGS.REACTNATIVE, TAGS.CSS],
+  },
+  {
+    title: 'Alice Dashboards - Una hermosa app de comida a domicilio',
+    description:
+      "Created from scratch with Next.js and Tailwind CSS. It's a library with SVG logos from the most popular brands. Optimized for SEO and performance.",
+    link: 'https://svgl.vercel.app/',
+    github: 'https://github.com/pheralb/svgl',
+    image: '/projects/alicedashboard.webp',
+    tags: [TAGS.VUE, TAGS.NODE, TAGS.CSS],
   },
 ];
 ---
