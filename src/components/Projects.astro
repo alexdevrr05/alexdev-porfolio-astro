@@ -1,0 +1,57 @@
+---
+import ReactNative from './icons/ReactNative.astro';
+import CSS from './icons/CSS.astro';
+
+const TAGS = {
+  REACTNATIVE: {
+    name: 'React Native',
+    class: 'bg-[#1b1b1d] text-white',
+    icon: ReactNative,
+  },
+  CSS: {
+    name: 'CSS',
+    class: 'bg-[#2c66b4] text-white',
+    icon: CSS,
+  },
+};
+const PROJECTS = [
+  {
+    title: 'Pediditos - Una hermosa app de comida a domicilio',
+    description:
+      "Created from scratch with Next.js and Tailwind CSS. It's a library with SVG logos from the most popular brands. Optimized for SEO and performance.",
+    link: 'https://svgl.vercel.app/',
+    github: 'https://github.com/pheralb/svgl',
+    image: '/projects/pediditos.webp',
+    tags: [TAGS.REACTNATIVE, TAGS.CSS],
+  },
+];
+---
+
+{
+  PROJECTS.map(({ image, title, description, tags }) => (
+    <article>
+      <h3 class='text-2xl font-semibold text-yellow-800 dark:text-yellow-200 mb-2'>
+        {title}
+      </h3>
+      <p class='text-lg mb-4 text-pretty'>{description}</p>
+      <ul class='flex gap-x-2 flex-row mb-2'>
+        {tags.map((tag) => (
+          <li>
+            <span
+              class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 border border-white/10`}
+            >
+              <tag.icon class='size-4' />
+              {tag.name}
+            </span>
+          </li>
+        ))}
+      </ul>
+      <img
+        loading='lazy'
+        class='rounded shadow-2xl shadow-white/10 aspect-video'
+        src={image}
+        alt={`Captura de pantalla del proyecto ${image}`}
+      />
+    </article>
+  ))
+}
