@@ -19,7 +19,7 @@ import {
 
 <Layout
   title='Portfolio de Alexdev - Desarrollador Web con más de 2 años de experiencia'
-  description='Disponible para trabajar. Desarrollador frontend. Ingeniero en Sistemas Computacionales'
+  description='Desarrollador frontend. Disponible para trabajar. Ingeniero en Sistemas Computacionales'
 >
   <main class='mx-5 xl:mx-0'>
     <SectionContainer class='py-44 pb-32' id='presentación'>
@@ -32,6 +32,7 @@ import {
         class='text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10'
       >
         Epa! Soy Alex<a
+          aria-label='Disponible para trabajar'
           href='https://linkedin.com/in/alexdevrr'
           target='_blank'
           rel='noopener'
@@ -60,17 +61,26 @@ import {
       </div>
 
       <nav class='flex gap-4 mt-8 flex-wrap'>
-        <SocialBanner href='https://linkedin.com/in/alexdevrr'>
+        <SocialBanner
+          aria-label='Abrir Linkedin de alexdevrr'
+          href='https://linkedin.com/in/alexdevrr'
+        >
           <LinkedInIcon class='size-4 md:size-6' />
           LinkedIn
         </SocialBanner>
-        <SocialBanner href='https://github.com/alexdevrr05'>
+        <SocialBanner
+          aria-label='Abrir Github de alexdevrr'
+          href='https://github.com/alexdevrr05'
+        >
           <GitHubIcon class='size-4 md:size-6' />
           GitHub
         </SocialBanner>
-        <SocialBanner href='mailto:alexkey0516@gmail.com'>
+        <SocialBanner
+          aria-label='alexkey0516@gmail.com'
+          href='mailto:alexkey0516@gmail.com'
+        >
           <MailIcon class='size-4 md:size-6' />
-          alexkey@gmail.com
+          alexkey0516@gmail.com
         </SocialBanner>
       </nav>
     </SectionContainer>

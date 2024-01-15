@@ -1,16 +1,30 @@
 <!-- bg-neutral-200 --><!-- dark:bg-black/50 -->
-<nav
-  class='flex justify-between mx-auto w-full xl:w-[768px] py-5 z-10 backdrop-blur-2xl'
+<header
+  class='flex justify-center items-center
+mx-auto
+py-5
+sticky top-0
+w-full xl:w-[1120px]
+z-10'
 >
-  <div class='flex flex-col sm:flex-row text-black dark:text-white w-full mx-5'>
-    <a class='font-semibold' href='#'>Alejandro Ramírez</a>
+  <nav
+    class='border border-black rounded-full
+    px-3 py-1
+    flex flex-row items-center
+    bg-neutral-200 dark:bg-black/50
+    backdrop-blur-2xl'
+  >
     <div
-      class='flex flex-col sm:flex-row gap-4 items-center flex-1 justify-evenly'
+      class='flex flex-col sm:flex-row text-black dark:text-white w-full mx-5'
     >
-      <a href='#'>Experiencia</a>
-      <a href='#'>Proyectos</a>
-      <a href='#'>Sobre mí</a>
-      <a href='#'>Contacto</a>
+      <div
+        class='flex flex-col sm:flex-row gap-4 items-center flex-1 justify-evenly'
+      >
+        <a href='#experiencia' aria-label='Ir a Experiencia'>Experiencia</a>
+        <a href='#proyectos' aria-label='Ir a Proyectos'>Proyectos</a>
+        <a href='#sobre-mi' aria-label='Ir a Sobre mí'>Sobre mí</a>
+        <a href='#contacto' aria-label='Ir a Contacto'>Contacto</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</header>
