@@ -15,6 +15,7 @@ import {
   LinkedInIcon,
   Briefcase,
 } from '../components/icons/index.astro';
+import Code from '../components/icons/Code.astro';
 ---
 
 <Layout
@@ -27,6 +28,7 @@ import {
         class='rounded-full size-12 mb-4'
         src='/avatar.webp'
         alt='ar icon '
+        style='object-fit: cover; clip-path: circle(50% at center)'
       />
       <h1
         class='text-gray-900
@@ -98,6 +100,16 @@ import {
         Experiencia laboral
       </h2>
       <Experience />
+    </SectionContainer>
+
+    <SectionContainer id='proyectos'>
+      <h2
+        class='text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80'
+      >
+        <Code class='size-7' />
+        Proyectos
+      </h2>
+      <!-- <Projects /> -->
     </SectionContainer>
   </main>
 </Layout>
