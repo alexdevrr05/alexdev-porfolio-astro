@@ -30,16 +30,16 @@ const PROJECTS = [
   {
     title: 'Pediditos - Una hermosa app de comida a domicilio',
     description:
-      "Created from scratch with Next.js and Tailwind CSS. It's a library with SVG logos from the most popular brands. Optimized for SEO and performance.",
+      'Un prototipo de aplicación móvil para entrega de alimentos construido con el framework React Native, diseñado para sistemas operativos Android. ',
     link: 'https://svgl.vercel.app/',
     github: 'https://github.com/pheralb/svgl',
     image: '/projects/pediditos.webp',
     tags: [TAGS.REACTNATIVE, TAGS.CSS],
   },
   {
-    title: 'Alice Dashboards - Una hermosa app de comida a domicilio',
+    title: 'Alice Dashboards - Transformando Datos en Impacto Positivo',
     description:
-      "Created from scratch with Next.js and Tailwind CSS. It's a library with SVG logos from the most popular brands. Optimized for SEO and performance.",
+      'Alice es una plataforma para proyectos de impacto que analiza, visualiza y alinea datos con marcos de medición de impacto.',
     link: 'https://svgl.vercel.app/',
     github: 'https://github.com/pheralb/svgl',
     image: '/projects/alicedashboard.webp',
@@ -50,7 +50,7 @@ const PROJECTS = [
 
 {
   PROJECTS.map(({ image, title, description, tags }) => (
-    <article>
+    <article class='mt-8'>
       <h3 class='text-2xl font-semibold text-yellow-800 dark:text-yellow-200 mb-2'>
         {title}
       </h3>
