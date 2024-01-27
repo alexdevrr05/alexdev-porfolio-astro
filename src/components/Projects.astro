@@ -3,6 +3,11 @@ import ReactNative from './icons/ReactNative.astro';
 import CSS from './icons/CSS.astro';
 import Vue from './icons/Vue.astro';
 import Node from './icons/Node.astro';
+import NestJS from './icons/NestJS.astro';
+import GitHub from './icons/GitHub.astro';
+import OpenAI from './icons/OpenAI.astro';
+
+import LinkButton from '../components/LinkButton.astro';
 
 const TAGS = {
   REACTNATIVE: {
@@ -25,6 +30,21 @@ const TAGS = {
     class: 'bg-black text-white',
     icon: Node,
   },
+  REACT: {
+    name: 'React',
+    class: 'bg-[#1b1b1d] text-white',
+    icon: ReactNative,
+  },
+  NESTJS: {
+    name: 'NestJS',
+    class: 'bg-white text-black',
+    icon: NestJS,
+  },
+  OPENAI: {
+    name: 'OpenAI',
+    class: 'bg-[#5bc083] text-[#343540]',
+    icon: OpenAI,
+  },
 };
 const PROJECTS = [
   {
@@ -32,7 +52,7 @@ const PROJECTS = [
     description:
       'Un prototipo de aplicación móvil para entrega de alimentos construido con el framework React Native, diseñado para sistemas operativos Android. ',
     link: 'https://svgl.vercel.app/',
-    github: 'https://github.com/pheralb/svgl',
+    github: 'https://github.com/alexdevrr05/food-app-rn',
     image: '/projects/pediditos.webp',
     tags: [TAGS.REACTNATIVE, TAGS.CSS],
   },
@@ -41,15 +61,24 @@ const PROJECTS = [
     description:
       'Alice es una plataforma para proyectos de impacto que analiza, visualiza y alinea datos con marcos de medición de impacto.',
     link: 'https://svgl.vercel.app/',
-    github: 'https://github.com/pheralb/svgl',
     image: '/projects/alicedashboard.webp',
     tags: [TAGS.VUE, TAGS.NODE, TAGS.CSS],
+  },
+  {
+    title:
+      'AIInsightHub - Ejercicios Prácticos y Asistentes con React + NestJS',
+    description:
+      'Una plataforma educativa interactiva que combina ejercicios prácticos y asistentes virtuales para mejorar la experiencia de aprendizaje en programación. Desarrollada con React para el frontend y NestJS para el backend, la aplicación aprovecha la API de OpenAI para potenciar la inteligencia artificial, mejorando así la interacción con los usuarios.',
+    link: 'https://tuproyecto.com/',
+    github: 'https://github.com/alexdevrr05/react-gpt',
+    image: '/projects/aiinsighthub.webp',
+    tags: [TAGS.REACT, TAGS.NESTJS, TAGS.OPENAI],
   },
 ];
 ---
 
 {
-  PROJECTS.map(({ image, title, description, tags }) => (
+  PROJECTS.map(({ image, title, description, tags, github }) => (
     <article class='mt-8'>
       <h3 class='text-2xl font-semibold text-yellow-800 dark:text-yellow-200 mb-2'>
         {title}
@@ -74,6 +103,14 @@ const PROJECTS = [
         src={image}
         alt={`Captura de pantalla del proyecto ${image}`}
       />
+      <footer class='flex gap-x-4 items-end justify-start mt-4'>
+        {github && (
+          <LinkButton href={github}>
+            <GitHub class='size-6' />
+            Ver código fuente
+          </LinkButton>
+        )}
+      </footer>
     </article>
   ))
 }
