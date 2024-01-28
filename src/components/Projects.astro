@@ -42,7 +42,7 @@ const TAGS = {
   },
   OPENAI: {
     name: 'OpenAI',
-    class: 'bg-[#5bc083] text-[#343540]',
+    class: 'bg-[#1a1a1a] text-white',
     icon: OpenAI,
   },
 };
@@ -72,7 +72,7 @@ const PROJECTS = [
     link: 'https://tuproyecto.com/',
     github: 'https://github.com/alexdevrr05/react-gpt',
     image: '/projects/aiinsighthub.webp',
-    tags: [TAGS.REACT, TAGS.NESTJS, TAGS.OPENAI],
+    tags: [TAGS.REACT, TAGS.OPENAI, TAGS.NESTJS],
   },
 ];
 ---
@@ -80,7 +80,7 @@ const PROJECTS = [
 {
   PROJECTS.map(({ image, title, description, tags, github }) => (
     <article class='mt-8'>
-      <h3 class='text-2xl font-semibold text-yellow-800 dark:text-yellow-200 mb-2'>
+      <h3 class='text-2xl font-semibold text-yellow-800 dark:text-primary mb-2'>
         {title}
       </h3>
       <p class='text-lg mb-4 text-pretty'>{description}</p>
