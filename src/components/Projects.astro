@@ -9,6 +9,7 @@ import OpenAI from './icons/OpenAI.astro';
 
 import LinkButton from '../components/LinkButton.astro';
 import ExpressJS from './icons/ExpressJS.astro';
+import Redux from './icons/Redux.astro';
 
 const TAGS = {
   REACTNATIVE: {
@@ -20,6 +21,11 @@ const TAGS = {
     name: 'CSS',
     class: 'bg-[#3652dd]/80 text-white',
     icon: CSS,
+  },
+  REDUX: {
+    name: 'Redux',
+    class: 'bg-[#1b1b1d] text-white',
+    icon: Redux,
   },
   VUE: {
     name: 'Vue',
@@ -66,9 +72,8 @@ const PROJECTS = [
     description:
       'Un prototipo de aplicación móvil para entrega de alimentos construido con el framework React Native, diseñado para sistemas operativos Android. ',
     link: 'https://svgl.vercel.app/',
-    github: 'https://github.com/alexdevrr05/food-app-rn',
     image: '/projects/pediditos.webp',
-    tags: [TAGS.REACTNATIVE, TAGS.CSS],
+    tags: [TAGS.REACTNATIVE, TAGS.REDUX, TAGS.CSS],
   },
   {
     title:
@@ -86,7 +91,7 @@ const PROJECTS = [
 {
   PROJECTS.map(({ image, title, description, tags, github }) => (
     <article class='mt-8'>
-      <h3 class='text-2xl font-semibold text-yellow-800 dark:text-primary mb-2'>
+      <h3 class='text-2xl font-semibold text-yellow-800 dark:text-primary/80 mb-2'>
         {title}
       </h3>
       <p class='text-lg mb-4 text-pretty'>{description}</p>
