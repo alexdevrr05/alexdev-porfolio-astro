@@ -8,6 +8,7 @@ import GitHub from './icons/GitHub.astro';
 import OpenAI from './icons/OpenAI.astro';
 
 import LinkButton from '../components/LinkButton.astro';
+import ExpressJS from './icons/ExpressJS.astro';
 
 const TAGS = {
   REACTNATIVE: {
@@ -17,13 +18,18 @@ const TAGS = {
   },
   CSS: {
     name: 'CSS',
-    class: 'bg-[#3652dd] text-white',
+    class: 'bg-[#3652dd]/80 text-white',
     icon: CSS,
   },
   VUE: {
     name: 'Vue',
-    class: 'bg-[#1a1a1a] text-white',
+    class: 'bg-black text-white',
     icon: Vue,
+  },
+  EXPRESS: {
+    name: 'Express',
+    class: 'bg-black text-white',
+    icon: ExpressJS,
   },
   NODE: {
     name: 'Node.js',
@@ -48,6 +54,14 @@ const TAGS = {
 };
 const PROJECTS = [
   {
+    title: 'Alice Dashboards - Transformando Datos en Impacto Positivo',
+    description:
+      'Alice es una plataforma para proyectos de impacto que analiza, visualiza y alinea datos con marcos de medición de impacto.',
+    link: 'https://svgl.vercel.app/',
+    image: '/projects/alicedashboard.webp',
+    tags: [TAGS.VUE, TAGS.NODE, TAGS.EXPRESS, TAGS.CSS],
+  },
+  {
     title: 'Pediditos - Una hermosa app de comida a domicilio',
     description:
       'Un prototipo de aplicación móvil para entrega de alimentos construido con el framework React Native, diseñado para sistemas operativos Android. ',
@@ -55,14 +69,6 @@ const PROJECTS = [
     github: 'https://github.com/alexdevrr05/food-app-rn',
     image: '/projects/pediditos.webp',
     tags: [TAGS.REACTNATIVE, TAGS.CSS],
-  },
-  {
-    title: 'Alice Dashboards - Transformando Datos en Impacto Positivo',
-    description:
-      'Alice es una plataforma para proyectos de impacto que analiza, visualiza y alinea datos con marcos de medición de impacto.',
-    link: 'https://svgl.vercel.app/',
-    image: '/projects/alicedashboard.webp',
-    tags: [TAGS.VUE, TAGS.NODE, TAGS.CSS],
   },
   {
     title:
