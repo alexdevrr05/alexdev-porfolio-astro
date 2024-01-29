@@ -8,6 +8,7 @@ export default {
         primary: '#66FCF1', // turquoise
         secondary: '#45A29E', // dark turquoise
         customGray: '#C5C6C7', // gray
+        darkGray: '#1f2833',
       },
     },
   },
