@@ -23,6 +23,15 @@ const { title, description } = Astro.props;
     <title>{title}</title>
     <ViewTransitions />
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QLM1CST0RH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QLM1CST0RH');
+  </script>
   <body class='relative text-darkGray dark:text-white'>
     <!-- bg-[radial-gradient(ellipse 80% 80% at 70% -30%,rgba(39,196,245,0.4),rgba(255,255,255,0))] -->
     <div
