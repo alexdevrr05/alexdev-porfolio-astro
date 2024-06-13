@@ -22,18 +22,6 @@ const { title, description } = Astro.props;
     <meta name='generator' content={Astro.generator} />
     <title>{title}</title>
     <ViewTransitions />
-
-    <!-- Google tag (gtag.js) -->
-    <script async src='https://www.googletagmanager.com/gtag/js?id=G-QLM1CST0RH'
-    ></script>
-    <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'G-QLM1CST0RH');
-    </script>
   </head>
 
   <body class='relative text-darkGray dark:text-white'>
