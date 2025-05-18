@@ -10,8 +10,20 @@ import OpenAI from './icons/OpenAI.astro';
 import LinkButton from '../components/LinkButton.astro';
 import ExpressJS from './icons/ExpressJS.astro';
 import Redux from './icons/Redux.astro';
+import MaterialUI from './icons/MaterialUI.astro';
+import PHP from './icons/PHP.astro';
 
 const TAGS = {
+  PHP: {
+    name: 'PHP',
+    class: 'bg-black text-white',
+    icon: PHP,
+  },
+  MATERIAL_UI: {
+    name: 'Material UI',
+    class: 'bg-[#1b1b1d] text-white',
+    icon: MaterialUI,
+  },
   REACTNATIVE: {
     name: 'React Native',
     class: 'bg-[#1b1b1d] text-white',
@@ -60,7 +72,23 @@ const TAGS = {
 };
 const PROJECTS = [
   {
-    title: 'Alice Dashboards - Transformando Datos en Impacto Positivo',
+    title: 'Tafer Hotels & Resorts - Sistema de pagos Evo payments',
+    description:
+      'Participé en el desarrollo de un nuevo sistema de pagos para Tafer Hotels & Resorts, reemplazando un gateway antiguo y optimizando la gestión de transacciones internacionales. La implementación de notificaciones actualizables redujo en un 90 % las quejas de los usuarios.',
+    link: 'https://svgl.vercel.app/',
+    image: '/projects/laptop-diamante.webp',
+    tags: [TAGS.VUE, TAGS.PHP, TAGS.CSS],
+  },
+  {
+    title: 'Olelo Dashboard - Convierte más conversaciones en conversiones',
+    description:
+      'Olelo Intelligence nació de una pasión por la innovación tecnológica combinada con una profunda comprensión de la dificultad de mejorar el rendimiento de ventas a gran escala.',
+    link: 'https://svgl.vercel.app/',
+    image: '/projects/olelodashboard.webp',
+    tags: [TAGS.REACT, TAGS.REDUX, TAGS.MATERIAL_UI],
+  },
+  {
+    title: 'Alice Dashboards - Transformando datos en impacto positivo',
     description:
       'Alice es una plataforma para proyectos de impacto que analiza, visualiza y alinea datos con marcos de medición de impacto.',
     link: 'https://svgl.vercel.app/',
